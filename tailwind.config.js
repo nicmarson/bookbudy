@@ -1,16 +1,11 @@
 module.exports = {
-  content: [
-    './src/views/**/*.hbs',
-  ],
-  media: false, // or 'media' or 'class'
+  purge: [],
+  darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
-  corePlugins: {
-    preflight: true,
-  },
-  plugins: [],
+  plugins: []
 };
