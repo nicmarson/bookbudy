@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  const awsTag = "mapleandpin09-20";
-  const amazonStore = '?&_encoding=UTF8&tag=mapleandpin09-20';
+  const awsTag = "bookbudy-20";
+  const amazonStore = '?&_encoding=UTF8&tag=bookbudy-20';
   var technicalQuestions = $('#technicalQuestions').hide();
   var bookTitle = '';
   var pathname = window.location.href;
