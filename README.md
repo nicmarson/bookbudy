@@ -1,60 +1,90 @@
-# EleventyOne
+<a href="https://precedent.dev">
+  <img alt="Precedent – Building blocks for your Next project" src="https://precedent.dev/api/og">
+  <h1 align="center">Precedent</h1>
+</a>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/056b4a67-70e6-4af4-9be5-dee151b8e906/deploy-status)](https://app.netlify.com/sites/eleventyone/deploys)
+<p align="center">
+  Building blocks for your Next project
+</p>
 
-Phil's first port of call when starting another project using Eleventy.
+<p align="center">
+  <a href="https://twitter.com/steventey">
+    <img src="https://img.shields.io/twitter/follow/steventey?style=flat&label=steventey&logo=twitter&color=0bf&logoColor=fff" alt="Steven Tey Twitter follower count" />
+  </a>
+  <a href="https://github.com/steven-tey/precedent">
+    <img src="https://img.shields.io/github/stars/steven-tey/precedent?label=steven-tey%2Fprecedent" alt="Precedent repo star count" />
+  </a>
+</p>
 
-This project scaffold includes:
+<p align="center">
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#one-click-deploy"><strong>One-click Deploy</strong></a> ·
+  <a href="#tech-stack--features"><strong>Tech Stack + Features</strong></a> ·
+  <a href="#author"><strong>Author</strong></a>
+</p>
+<br/>
 
-- Eleventy with a skeleton site and some configs I use regularly
-- A date format filter for Nunjucks
-- Sass pipeline
-- JS pipeline
-- Serverless (FaaS) development pipeline with Netlify Functions for Lambda
+## Introduction
 
+Precedent is an opinionated collection of components, hooks, and utilities for your Next.js project.
 
-![Eleventy screenshot](./eleventyone-template.png)
+## One-click Deploy
 
+You can deploy this template to Vercel with the button below:
 
-## Instructions
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent&project-name=precedent&repository-name=precedent&demo-title=Precedent&demo-description=An%20opinionated%20collection%20of%20components%2C%20hooks%2C%20and%20utilities%20for%20your%20Next%20project.&demo-url=https%3A%2F%2Fprecedent.dev&demo-image=https%3A%2F%2Fprecedent.dev%2Fapi%2Fog&env=DATABASE_URL,GOOGLE_CLIENT_ID,GOOGLE_CLIENT_SECRET,NEXTAUTH_SECRET&envDescription=How%20to%20get%20these%20env%20variables%3A&envLink=https%3A%2F%2Fgithub.com%2Fsteven-tey%2Fprecedent%2Fblob%2Fmain%2F.env.example)
 
-To get your own instance of this 11ty starter project cloned and deploying to Netlify very quickly, just click the button below and follow the instructions.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/philhawksworth/eleventyone)
-
-
-## Wait, what happens when I click that button?
-
-Good question. Here's what it will do...
-
-1. Netlify will clone the git repository of this project into your Github account. It will be asking for permission to add the repo for you.
-2. We'll create a new site for you in Netlify, and configure it to use your shiny new repo. Right away you'll be able to deploy changes simply by pushing changes to your repo.
-3. That's it really.
-
-
-## Local development
-
-To build the site you need:
-
-- [Node](https://nodejs.org) - to run the build
-- [Yarn](https://yarnpkg.com) - to install and manage dependencies
-
-
-### Getting started
+You can also clone & create this repo locally with the following command:
 
 ```bash
-
-# clone this repository
-git clone git@github.com:philhawksworth/eleventyone.git
-
-# go to the working directory
-cd eleventyone
-
-# install dependencies
-yarn
-
-# start a local build server with hot reloading
-yarn start
+npx create-next-app precedent --example "https://github.com/steven-tey/precedent"
 ```
 
+## Tech Stack + Features
 
+https://user-images.githubusercontent.com/28986134/212368288-12f41e37-aa8c-4e0a-a542-cf6d23410a65.mp4
+
+### Frameworks
+
+- [Next.js](https://nextjs.org/) – React framework for building performant apps with the best developer experience
+- [Auth.js](https://authjs.dev/) – Handle user authentication with ease with providers like Google, Twitter, GitHub, etc.
+- [Prisma](https://www.prisma.io/) – Typescript-first ORM for Node.js
+
+### Platforms
+
+- [Vercel](https://vercel.com/) – Easily preview & deploy changes with git
+- [Railway](https://railway.app/) – Easily provision a PostgreSQL database (no login required)
+
+### UI
+
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development
+- [Radix](https://www.radix-ui.com/) – Primitives like modal, popover, etc. to build a stellar user experience
+- [Framer Motion](https://framer.com/motion) – Motion library for React to animate components with ease
+- [Lucide](https://lucide.dev/) – Beautifully simple, pixel-perfect icons
+- [`@next/font`](https://nextjs.org/docs/basic-features/font-optimization) – Optimize custom fonts and remove external network requests for improved performance
+- [`@vercel/og`](https://vercel.com/docs/concepts/functions/edge-functions/og-image-generation) – Generate dynamic Open Graph images on the edge
+- [`react-wrap-balancer`](https://github.com/shuding/react-wrap-balancer) – Simple React component that makes titles more readable
+
+### Hooks and Utilities
+
+- `useIntersectionObserver` –  React hook to observe when an element enters or leaves the viewport
+- `useLocalStorage` – Persist data in the browser's local storage
+- `useScroll` – React hook to observe scroll position ([example](https://github.com/steven-tey/precedent/blob/main/components/layout/index.tsx#L25))
+- `nFormatter` – Format numbers with suffixes like `1.2k` or `1.2M`
+- `capitalize` – Capitalize the first letter of a string
+- `truncate` – Truncate a string to a specified length
+- [`use-debounce`](https://www.npmjs.com/package/use-debounce) – Debounce a function call / state update
+
+### Code Quality
+
+- [TypeScript](https://www.typescriptlang.org/) – Static type checker for end-to-end typesafety
+- [Prettier](https://prettier.io/) – Opinionated code formatter for consistent code style
+- [ESLint](https://eslint.org/) – Pluggable linter for Next.js and TypeScript
+
+### Miscellaneous
+
+- [Vercel Analytics](https://vercel.com/analytics) – Track unique visitors, pageviews, and more in a privacy-friendly way
+
+## Author
+
+- Steven Tey ([@steventey](https://twitter.com/steventey))

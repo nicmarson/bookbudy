@@ -1,5 +1,7 @@
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+
 [build]
-  command = "yarn run build"
-  publish = "dist"
-  NODE_ENV = "8.9.0"
-  Functions = "functions"
+command = "yarn next build"
+publish = ".next"
+NODE_ENV = "18.12.0"
