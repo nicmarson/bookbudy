@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  {% include "partials/head.njk" %}
+</head>
+<body class="{{ bodyClass }}" >
+  {% include "partials/body-before.njk" %}
+  <!-- Page Contents -->
+  <div class="pusher page home">
+    {% include "home/masthead.njk" %}
+    <section class="ui vertical alternate segment">
+      <div class="ui text container center aligned row">
+        <p class="lead">As a self-published author you have enough to worry about with writing your book. That's why we’ve created a tool to generate more reviews.</p>
+        <p class="lead">Let us take part of the marketing process off your hands so you can focus on what matters most.</p>
+      </div>
+    </section>
+    <section class="ui vertical quote segment">
+      <div class="ui equal width stackable centered grid">
+        <div class="middle aligned row">
+          <div class="column roman">
+            <img alt="blank book image" class="ui fluid image" src="images/arabica-14.png">
+          </div>
+          <div class="column">
+            <div class="content">
+              <h2>Where are my reviews?</h2>
+              <p>The problem may not be your book. Most readers either don't know what to write, or how to post a review.</p>
+              <p><a class="ui large secondary basic button" href="#section_pricing">We Can Help</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "home/reviewsample.njk" %}
+    <section class="ui vertical quote segment">
+      <div class="ui equal width stackable centered grid">
+        <div class="middle aligned row">
+          <div class="column">
+            <div class="content">
+              <h2>More hours in your day</h2>
+              <p>Less time marketing means more time to focus on what you really care about — writing your next book.</p>
+              <p><a class="ui large secondary basic button" href="#section_pricing">Get Started</a></p>
+            </div>
+          </div>
+          <div class="column" style="background-color:#89D1C6;">
+            <img alt="blank book image" class="ui fluid image" src="images/arabica-27.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    {% include "home/testimonial.njk" %}
+    {% include "home/pricing.njk" %}
+    <section class="ui vertical amazonad segment">
+      <div class="ui container center aligned row">
+        <h2>Kindle Daily Deals</h2>
+        <p><a href="https://amzn.to/2VaTg3M">This page</a> lists new Kindle book deals for adults and young readers.</p>
+        <p>Authors: Promote your book here, <a href="https://amzn.to/2VaTg3M">find out how</a>.</p>
+        <h3>These Kindle Books are Recommended for You</h3>
+        <br>
+        <div id="amzn-assoc-ad-2fb72309-8aa1-4590-9215-f68f6ac6c5e0"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=2fb72309-8aa1-4590-9215-f68f6ac6c5e0"></script>
+      </div>
+    </section>
+    <div class="ui vertical alternate segment">
+      <div class="ui equal width stackable grid">
+        <div class="center aligned row">
+          <div class="column">
+            <p><a class="ui fluid button huge basic primary" href="how-to-post-review.html">How To Post a Review on Amazon</a></p>
+          </div>
+          <div class="column">
+            <p><a href="tips-for-better-review.html">Tips for a Better Review</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ content | safe }}
+    {% include "partials/footer.njk" %}
+    <div class="ui fullscreen modal">
+      <i class="close icon"></i>
+      <div class="header">Book Review Generator</div>
+      <div class="scrolling content">{% include "generator/generator.njk" %}</div>
+    </div>
+    <div class="ui small modal">
+      <i class="close icon"></i>
+      <div class="header">Contact Us</div>
+      {% include "partials/contact.njk" %}
+    </div>
+  </div>
+  {% include "partials/body-after.njk" %}
+  <script>{% include "js/ratings.js" %}</script>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,38 @@
+/* Header */
+
+.header {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  width: 100%;
+  z-index: 50;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .brand {
+    background-image: image-url("logo.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 30px;
+    width: 202px;
+
+    span {
+      position:absolute;
+      left:-10000px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+    }
+  }
+
+  .social {
+    text-align: right;
+  }
+}

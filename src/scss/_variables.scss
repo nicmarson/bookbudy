@@ -1,0 +1,125 @@
+/* Variables */
+$black: #000;
+$yellow: #FDE07B;
+$white: #fff;
+
+$deepblue: #304463;
+$lightgray: #F2F3F5;
+$doublespanishwhite: #E6D7B9;
+$manhattan: #F5C999;
+$roman: #DE6360;
+
+$text: #444C55;
+$linkColor: #0066C0;
+$linkHoverColor: #C45500;
+
+$borderColor: rgba(0, 0, 0, 0.13);
+$solidBorderColor: #DDDDDD;
+$internalBorderColor: rgba(0, 0, 0, 0.06);
+$selectedBorderColor: #51A7E8;
+
+/* Colors */
+$blue: #80A6CD;
+$green: #60B044;
+$orange: #D26911;
+$infoBackgroundColor: #E6F1F6;
+$infoTextColor: #4E575B;
+
+// Breakpoints
+$bp-narrow: "(min-width: 400px)";
+$bp-mid: "(min-width: 740px)";
+$bp-wide: "(min-width: 1200px)";
+
+:root {
+
+  /* grays */
+  --white: #fff;
+  --lightGray: #eee;
+  --gray: #bcbcbc;
+  --darkGray: #424242;
+  --black: #000;
+
+  /* blue */
+  --blue: #0066c0;
+  --lightBlue: #3299bb;
+  --darkBlue: #232f3e;
+  --darkBlueLighter: #37475a;
+
+  /* orange */
+  --orange: #f90;
+  --orangeAlt: #fb0;
+  --lightOrange: #FFDD7F;
+
+  /* green */
+  --green: #4ac694;
+  --lightGreen: #89DAB9;
+  --lighterGreen: #B2E7D1;
+
+  /* red */
+  --red: #c45500;
+
+  /* blue */
+  --primaryColor: var(--blue);
+  /* orange */
+  --secondaryColor: var(--red);
+  /* warning */
+  --warningColor: var(--orangeAlt);
+  /* red */
+  --dangerColor: var(--red);
+  /* green */
+  --successColor: var(--green);
+
+  --bodyBackground: var(--white);
+  --modalBackground: var(--lightGray);
+
+  --mainColor: var(--darkGray);
+  --mainColorWeak: var(--gray);
+
+  --linkColor: var(--blue);
+  --linkHover: var(--gray);
+
+  --inverseBackground: var(--darkBlue);
+  --inverseText: var(--white);
+  --inverseLink: var(--lightGray);
+  --inverseLinkHover: var(--white);
+
+  --fontSize: 1rem;
+  --fontFamilyDefault: 'Open Sans', sans-serif;
+  --fontFamilyAccent: 'Alegreya Sans', sans-serif;
+
+  --navbarHeight: 3.75rem;
+  --reviewHeaderHeight: 108px;
+
+  --centerAbsolute: {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  };
+
+  --centerFlex: {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  };
+
+  --aspectRatio: {
+    flex: 1 1 auto;
+    height: 0;
+    min-width: 0;
+    min-height: 0;
+    position: relative;
+  };
+
+  --accessibleHide: {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  };
+}

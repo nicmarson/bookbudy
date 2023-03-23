@@ -1,0 +1,115 @@
+<section class="ui vertical segment reviewpost hideCustomize" id="finalRatingReview" style="display:none">
+  <div class="ui very padded segment">
+    <div class="ui very padded segments">
+      <div class="ui segment">
+        <div class="media">
+          <img alt="book review image" class="ui small image" src="/images/book-amazon.svg">
+          <div class="media-body">
+            <div class="ui header">Finally</div>
+            <h2>Post your final review to Amazon.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="ui segment">
+        <h3>Your Final Rating</h3>
+        <ul class="question-stars" id="final-stars">
+          <li title="Poor" data-value="1" data-answer="final-rating1">
+            <i class="fa fa-star fa-fw"></i>
+          </li>
+          <li title="Fair" data-value="2" data-answer="final-rating2">
+            <i class="fa fa-star fa-fw"></i>
+          </li>
+          <li title="Average" data-value="3" data-answer="final-rating3">
+            <i class="fa fa-star fa-fw"></i>
+          </li>
+          <li title="Good" data-value="4" data-answer="final-rating4">
+            <i class="fa fa-star fa-fw"></i>
+          </li>
+          <li title="Excellent" data-value="5" data-answer="final-rating5">
+            <i class="fa fa-star fa-fw"></i>
+          </li>
+        </ul>
+      </div>
+      <div class="ui segment">
+        <h3>Your Generated Review</h3>
+        <div class="ui segments final-review">
+<div id="finalReview" style="display: none">
+<span id="finalSummary"></span>
+
+<span id="finalAnswer1Title">OVERALL - <span id="finalAnswer1TitleText"></span></span>
+<span id="finalAnswer1"></span><!--
+
+<span id="finalAnswer3Title">PLOT - <span id="finalAnswer3TitleText"></span></span>
+<span id="finalAnswer3"></span>
+
+<span id="finalAnswer4Title">CHARACTERS - <span id="finalAnswer4TitleText"></span></span>
+<span id="finalAnswer4"></span>
+
+<span id="finalAnswer2Title">PACING - <span id="finalAnswer2TitleText"></span></span>
+<span id="finalAnswer2"></span>
+
+<span id="finalAnswer5Title">IMMERSION - <span id="finalAnswer5TitleText"></span></span>
+<span id="finalAnswer5"></span>
+
+<span id="finalAnswer6Title">EDITING - <span id="finalAnswer6TitleText"></span></span>
+<span id="finalAnswer6"></span>
+
+<span id="finalFreeCopy"></span> -->
+</div>
+<pre class="ui attached segment final-review-text" id="editableReview" contenteditable="false">
+<span id="editableSummary"></span>
+
+<span id="editableAnswer1Title"></span>
+<span id="editableAnswer1"></span><!--
+
+<span id="editableAnswer3Title"></span>
+<span id="editableAnswer3"></span>
+
+<span id="editableAnswer4Title"></span>
+<span id="editableAnswer4"></span>
+
+<span id="editableAnswer2Title"></span>
+<span id="editableAnswer2"></span>
+
+<span id="editableAnswer5Title"></span>
+<span id="editableAnswer5"></span>
+
+<span id="editableAnswer6Title"></span>
+<span id="editableAnswer6"></span>
+
+<span id="editableFreeCopy"></span> -->
+</pre>
+          <div class="ui two bottom attached buttons">
+            <button class="ui big primary button final-review-button" onclick="copyToClipboard('#editableReview')">Copy to clipboard</button>
+            <a class="ui big orange button amazon-review-button" href="https://www.amazon.com?&_encoding=UTF8&tag=mapleandpin09-20" id="amazonLink" target="_blank">
+              <i class="amazon icon"></i>
+              Post to Amazon
+            </a>
+          </div>
+        </div>
+        <form class="ui form">
+          <div class="field">
+            <div class="ui checkbox">
+              <input type="checkbox" id="showTitles" name="showTitles">
+              <label for="showTitles">Show titles in my review.</label>
+            </div>
+          </div>
+          <button class="ui button hideEditable" id="editReview">Switch to Edit Mode</button>
+          <button class="ui button reset-review-button button-secondary showEditable" id="resetReview">Undo Edits</button>
+        </form>
+        <p style="display: none;">
+          <label>
+            <input type="checkbox">
+            <span class="label-body">Send a copy to my email</span>
+          </label>
+        </p>
+        <div style="display: none;">
+          <label for="exampleEmailInput">Your email</label>
+          <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+        </div>
+        <div class="ui divider"></div>
+        <p><small>As an Amazon Associate we earn from qualifying purchases to keep this site running.</small></p>
+      </div>
+    </div>
+  </div>
+</section>
