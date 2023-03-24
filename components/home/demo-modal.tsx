@@ -19,19 +19,18 @@ const DemoModal = ({
     <Modal showModal={showDemoModal} setShowModal={setShowDemoModal}>
       <div className="w-full overflow-hidden md:max-w-md md:rounded-2xl md:border md:border-gray-100 md:shadow-xl">
         <div className="flex flex-col items-center justify-center space-y-3 bg-white px-4 py-6 pt-8 text-center md:px-16">
-          <a href="https://precedent.dev">
+          <a href="https://bookbudy.com">
             <Image
               src="/logo.png"
-              alt="Precedent Logo"
+              alt="BookBudy Logo"
               className="h-10 w-10 rounded-full"
               width={20}
               height={20}
             />
           </a>
-          <h3 className="font-display text-2xl font-bold">Precedent</h3>
+          <h3 className="font-display text-2xl font-bold">BookBudy</h3>
           <p className="text-sm text-gray-500">
-            Precedent is an opinionated collection of components, hooks, and
-            utilities for your Next.js project.
+            BookBudy solves the problem of finding the next book to read. Our platform scrapes reviews from reputable sources to provide a simple percentage-based rating along with current prices at Amazon, Barnes & Noble, Kobo, Apple Books, and Google Play Books.
           </p>
         </div>
       </div>
