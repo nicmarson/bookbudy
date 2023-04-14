@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import Script from 'next/script'
 import { Analytics } from "@vercel/analytics/react";
 import type { Session } from "next-auth";
 import { SessionProvider } from "next-auth/react";
@@ -30,6 +31,21 @@ export default function MyApp({
         </div>
       </RWBProvider>
       <Analytics />
+      <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-LBCSGGT96B"/>
+      <Script
+        id='google-analytics'
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-LBCSGGT96B', {
+              page_path: window.location.pathname,
+            });
+          `,
+          }}
+      />
     </SessionProvider>
   );
 }

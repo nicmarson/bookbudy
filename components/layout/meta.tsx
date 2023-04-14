@@ -3,8 +3,8 @@ import Head from "next/head";
 const DOMAIN = "https://bookbudy.com";
 
 export default function Meta({
-  title = "BookBudy - Discover your next book with trusted measurements.",
-  description = "BookBudy is a comprehensive platform for readers to make informed decisions about what to read next.",
+  title = "BookBudy - Discover your next book",
+  description = "BookBudy is a platform for readers to make informed decisions on book purchases from book lists, book reviews, authors, and influencers who love to read.",
   image = `${DOMAIN}/api/og`,
 }: {
   title?: string;
@@ -31,6 +31,8 @@ export default function Meta({
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&display=optional"></link>
     </Head>
   );
 }

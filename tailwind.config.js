@@ -12,13 +12,16 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ["var(--font-sf)", "system-ui", "sans-serif"],
-        default: ["var(--font-inter)", "system-ui", "sans-serif"],
+        display: ["Paytone One","var(--font-sf)", "system-ui", "sans-serif"],
+        default: ["var(--font-sf)", "system-ui", "sans-serif"],
       },
       animation: {
         // Tooltip
         "slide-up-fade": "slide-up-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
         "slide-down-fade": "slide-down-fade 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
+      },
+      container: {
+        center: true,
       },
       keyframes: {
         // Tooltip
