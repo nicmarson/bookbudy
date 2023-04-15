@@ -8,6 +8,7 @@ import { Provider as RWBProvider } from "react-wrap-balancer";
 import cx from "classnames";
 import localFont from "@next/font/local";
 import { Inter } from "@next/font/google";
+import { Paytone_One } from "@next/font/google";
 
 const sfPro = localFont({
   src: "../styles/SF-Pro-Display-Medium.otf",
@@ -19,6 +20,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+const paytone = Paytone_One({
+  variable: "--font-paytone",
+  subsets: ["latin"],
+  weight: "400"
+});
+
 export default function MyApp({
   Component,
   pageProps: { session, ...pageProps },
@@ -26,7 +33,7 @@ export default function MyApp({
   return (
     <SessionProvider session={session}>
       <RWBProvider>
-        <div className={cx(sfPro.variable, inter.variable)}>
+        <div className={cx(sfPro.variable, paytone.variable)}>
           <Component {...pageProps} />
         </div>
       </RWBProvider>

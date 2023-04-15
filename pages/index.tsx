@@ -16,8 +16,8 @@ export default function Home() {
           <h1 className="text-display-large mb-6">
             A platform for people who <span className="text-primary-700 block">love books.</span>
           </h1>
-          <p className="text-paragraph-extra-large-regular md:text-md max-w-4xl">
-            At BookBudy, we understand the struggle of finding your next literary adventure. That's why we're creating a platform that will provide you with all the information you need to get the best value out of your next book purchase.
+          <p className="text-paragraph-extra-large-regular md:text-md max-w-2xl">
+            At BookBudy, we understand the struggle of finding your next literary adventure. That&apos;s why we&apos;re creating a platform that will provide you with all the information you need to get the best value out of your next book purchase.
           </p>
         </div>
       </header>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="bg-primary-800 text-white effect-style-inset-shadow border-box-outline p-8 w-full">
             <div className="">
               <header className="mb-4">
-                <h2 className="font-display text-2xl font-bold md:text-3xl md:font-normal mb-2">We're curious how people <span className="text-warning-400 block">select books.</span></h2>
+                <h2 className="font-display text-2xl font-bold md:text-3xl md:font-normal mb-2">We&apos;re curious how people <span className="text-warning-400 block">select books.</span></h2>
                 <div className="text-paragraph-large-regular">Vote in our poll.</div>
               </header>
             </div>

@@ -1,10 +1,6 @@
-:root {
-	--font-family-default: "SF Pro Text","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-	--font-family-display: "Paytone One","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
 .text-paragraph-medium-regular {
 	font-size: 15px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 24px;
@@ -13,7 +9,7 @@
 }
 .text-paragraph-medium-bold {
 	font-size: 15px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 24px;
@@ -22,7 +18,7 @@
 }
 .text-paragraph-large-regular {
 	font-size: 17px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 24px;
@@ -31,7 +27,7 @@
 }
 .text-paragraph-large-bold {
 	font-size: 17px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 24px;
@@ -40,7 +36,7 @@
 }
 .text-paragraph-extra-large-regular {
 	font-size: 19px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 28px;
@@ -49,7 +45,7 @@
 }
 .text-paragraph-extra-large-bold {
 	font-size: 19px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 28px;
@@ -58,7 +54,7 @@
 }
 .text-paragraph-small-regular {
 	font-size: 13px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 20px;
@@ -67,7 +63,7 @@
 }
 .text-ui-large-bold {
 	font-size: 17px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 24px;
@@ -77,7 +73,7 @@
 }
 .text-ui-medium-regular {
 	font-size: 15px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 400;
 	font-style: normal;
 	line-height: 20px;
@@ -86,7 +82,7 @@
 }
 .text-ui-medium-bold {
 	font-size: 15px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 20px;
@@ -96,7 +92,7 @@
 }
 .text-header-small {
 	font-size: 18px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 28px;
@@ -105,7 +101,7 @@
 }
 .text-header-medium {
 	font-size: 22px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 28px;
@@ -114,7 +110,7 @@
 }
 .text-header-large {
 	font-size: 24px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 32px;
@@ -123,7 +119,7 @@
 }
 .text-header-extra-large {
 	font-size: 48px;
-	font-family: var(--font-family-default);
+	font-family: var(--font-sf);
 	font-weight: 700;
 	font-style: normal;
 	line-height: 56px;
@@ -133,7 +129,7 @@
 }
 .text-display-large {
 	font-size: 64px;
-	font-family: var(--font-family-display);
+	font-family: var(--font-paytone);
 	font-weight: normal;
 	font-style: normal;
 	line-height: 68px;
