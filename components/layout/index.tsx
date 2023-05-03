@@ -29,8 +29,8 @@ export default function Layout({
       <Meta {...meta} />
       <SignInModal />
       <div className="page">
-        <nav>
-          <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
+        <nav className="container mx-auto">
+          <div className="flex h-16 max-w-screen-xl items-center justify-between">
             <Link href="/" className="flex items-center font-display text-2xl">
               <Image
                 src="/logo.png"
@@ -60,23 +60,10 @@ export default function Layout({
         <main className="flex-auto">
           {children}
         </main>
-        <footer>
-          <div className="container mx-auto">
-            <div className="mx-5 flex h-16 max-w-screen-xl items-center justify-between xl:mx-auto">
-              <div className="flex items-center font-display text-2xl">
-                <Image
-                  src="/logo.png"
-                  alt="BookBudy logo"
-                  width="94"
-                  height="48"
-                ></Image>
-                <p className="hidden">BookBudy</p>
-              </div>
-              <div>
-                <div>Privacy</div>
-                <div>Terms of Service</div>
-              </div>
-            </div>
+        <footer className="container mx-auto">
+          <div className="py-8">
+            <p className="text-paragraph-small-regular">We may earn commission from links on this page.</p>
+            <p className="text-paragraph-small-regular">&copy;BookBudy, LLC. All Rights Reserved.</p>
           </div>
         </footer>
       </div>
