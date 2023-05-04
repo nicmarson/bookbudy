@@ -1,5 +1,14 @@
 /* Modules */
 
+.square-28 {
+	height: 28px;
+	width: 28px;
+}
+.square-48 {
+	height: 48px;
+	width: 48px;
+}
+
 button,
 button.button,
 a.button {
@@ -13,10 +22,6 @@ a.button {
 	background-color: var(--color-shades-white);
 	border-radius: 12px;
 }
-.avatar-48 {
-	height: 48px;
-	width: 48px;
-}
 
 .number {
 	background-color: var(--color-neutral-50);
@@ -24,10 +29,6 @@ a.button {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-}
-.number-28 {
-	height: 28px;
-	width: 28px;
 }
 
 .section {
