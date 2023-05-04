@@ -1,0 +1,50 @@
+/* Components */
+
+.card-list .card-list-items {
+	display: flex;
+	flex-direction: column;
+	padding: 12px;
+}
+
+.card-list-item {
+	display: flex;
+	gap: 12px;
+	padding: 12px;
+}
+
+.card-list-item .media {
+    flex: 1 1 auto;
+}
+
+.card-book-horizontal {
+	display: flex;
+	gap: 16px;
+}
+
+.card-book-horizontal .thumb {
+	height: 193px;
+	width: 128px;
+}
+
+.card-book-horizontal .content {
+	height: 193px;
+	width: 128px;
+}
+
+.card-book-horizontal .description {
+	height: 193px;
+	width: 128px;
+}
+
+.card-book-horizontal .actions {
+	height: 193px;
+	width: 128px;
+}
+
+.whitespace-no-wrap {
+	white-space: nowrap!important;
+}
+
+.w-full {
+	width: 100%;
+}

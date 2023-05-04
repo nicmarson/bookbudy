@@ -1,0 +1,68 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+	<header class="entry-header">
+		<h1 class="text-display-large">Welcome to {{ .Title | markdownify }}</h1>
+		<p class="text-paragraph-extra-large-regular">A platform for people who love books.</p>
+	</header>
+	<div class="entry-content">
+		{{ .Content | markdownify }}
+	</div>
+	<footer class="entry-footer">
+		{{ partial "social_icons.html" site.Params.socialIcons }}
+	</footer>
+	<section class="section">
+		<div class="section-header">
+			<h2 class="text-header-large">Top 10 Book Charts</h2>
+		</div>
+		<div class="row">
+			<article class="post-entry card-list">
+				<div class="entry-header card-list-header">
+					<div class="media" style="--media-gap: 4px;">
+                        <div class="media-image">
+						    <div class="avatar avatar-48"></div>
+                        </div>
+						<div class="media-content">
+							<h3 class="text-paragraph-large-bold">2022 Best Sellers</h3>
+							<p class="text-paragraph-medium-regular">@nyt</p>
+						</div>
+					</div>
+                    <div class="action"><a class="button" href="#">Add</a></div>
+				</div>
+				<div class="entry-content card-list-items">
+					<div class="card-list-item">
+						<div class="media" style="--media-gap: 4px;">
+                            <div class="media-image">
+                                <div class="number number-28">
+                                    1
+                                </div>
+                            </div>
+							<div class="media-content">
+								Tomorrow, and Tomorrow, and…
+							</div>
+						</div>
+                        <div class="action"><a class="button" href="#">Buy</a></div>
+					</div>
+				</div>
+			</article>
+			
+		</div>
+	</section>
+    <section class="container mx-auto section">
+        <div class="section-header">
+            <h2 class="text-header-large">Recent Book Lists</h2>
+        </div>
+        <div class="columns">
+            <div class="card-book card-book-horizontal">
+                <div class="thumb"></div>
+                <div class="content">
+                    <div class="description">
+                        <div class="header">
+                            <h3 class="title"></h3>
+                        </div>
+                    </div>
+                    <div class="actions"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</article>{{- end -}}

@@ -1,0 +1,22 @@
+:root {
+	--font-sf: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif;
+	--font-paytone: 'Paytone One', sans-serif;
+	--color-neutral-50: rgb(233,233,234);
+	--color-neutral-100: rgba(211,211,212,1);
+	--gap: 40px;
+	--content-gap: 24px;
+	--nav-width: 1440px;
+	--main-width: 1440px;
+	--header-height: 80px;
+	--footer-height: 80px;
+	--radius: 16px;
+	--theme: rgb(255, 255, 255);
+	--entry: rgb(255, 255, 255);
+	--primary: rgb(30, 30, 30);
+	--secondary: rgb(108, 108, 108);
+	--tertiary: rgb(214, 214, 214);
+	--content: rgb(31, 31, 31);
+	--hljs-bg: rgb(28, 29, 33);
+	--code-bg: rgb(245, 245, 245);
+	--border: rgb(238, 238, 238);
+}

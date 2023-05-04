@@ -1,0 +1,45 @@
+/* Overrides */
+
+body.list {
+	background-color: var(--color-neutral-50);
+}
+
+.border-box-outline {
+	border: 2px solid var(--color-neutral-600);
+	border-radius: 24px;
+	overflow: hidden;
+	position: relative;
+}
+
+.post-entry {
+	padding: 0;
+	width: 100%;
+}
+
+.post-entry .entry-header {
+	background-color: var(--color-neutral-100);
+	border-radius: 16px 16px 0 0;
+	display: flex;
+	padding: 20px 16px;
+}
+
+.post-entry .entry-header .media {
+    flex: 1 1 auto;
+}
+
+.post-entry .entry-header h2 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+
+.post-entry .entry-content {
+	margin: 0;
+	padding: var(--content-gap);
+}
+
+.post-entry .entry-footer {
+	margin: 0;
+	padding: 8px var(--content-gap);
+}

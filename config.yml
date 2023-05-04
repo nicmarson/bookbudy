@@ -138,10 +138,6 @@ params:
   homeInfoParams:
     Title: 'BookBudy'
     Content: >
-      Welcome to BookBudy.
-
-      A platform for people who love books.
-
       At BookBudy, we understand the struggle of finding your next literary adventure. That&apos;s why we&apos;re creating a platform that will provide you with all the information you need to get the best value out of your next book purchase.
 
   socialIcons:

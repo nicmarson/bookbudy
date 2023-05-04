@@ -1,0 +1,75 @@
+/* Modules */
+
+button,
+button.button,
+a.button {
+    border-radius: 24px;
+    display: inline-block;
+    margin: 0;
+    padding: 8px 24px;
+}
+
+.avatar {
+	background-color: var(--color-shades-white);
+	border-radius: 12px;
+}
+.avatar-48 {
+	height: 48px;
+	width: 48px;
+}
+
+.number {
+	background-color: var(--color-neutral-50);
+	border-radius: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.number-28 {
+	height: 28px;
+	width: 28px;
+}
+
+.section {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px 0;
+}
+
+.row {
+	display: flex;
+	gap: var(--gap);
+}
+
+@media (min-width: 500px) {
+    .media {
+        display: grid;
+        grid-template-columns: fit-content(200px) 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+            "image content"
+            "image footer";
+        grid-gap: var(--media-gap, 8px);
+    }
+
+    .media-flip {
+        grid-template-columns: 1fr fit-content(250px);
+        grid-template-areas:
+            "content image"
+            "footer image";
+    }
+
+    .media-image {
+        grid-area: image;
+    }
+
+    .media-content {
+        grid-area: content;
+    }
+
+    .media-footer {
+        grid-area: footer;
+    }
+
+}
