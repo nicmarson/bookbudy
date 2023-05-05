@@ -3,6 +3,7 @@
 	--font-paytone: 'Paytone One', sans-serif;
 	--color-neutral-50: rgb(233,233,234);
 	--color-neutral-100: rgba(211,211,212,1);
+	--color-primary-700: rgba(0,138,119,1);
 	--gap: 40px;
 	--content-gap: 24px;
 	--nav-width: 1440px;
@@ -12,8 +13,8 @@
 	--radius: 16px;
 	--theme: rgb(255, 255, 255);
 	--entry: rgb(255, 255, 255);
-	--primary: rgb(30, 30, 30);
-	--secondary: rgb(108, 108, 108);
+	--primary: rgb(7,7,8);
+	--secondary: rgb(26,30,30);
 	--tertiary: rgb(214, 214, 214);
 	--content: rgb(31, 31, 31);
 	--hljs-bg: rgb(28, 29, 33);

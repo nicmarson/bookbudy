@@ -1,5 +1,9 @@
 /* Overrides */
 
+.block {
+	display: block;
+}
+
 body.list {
 	background-color: var(--color-neutral-50);
 }
@@ -42,4 +46,20 @@ body.list {
 .post-entry .entry-footer {
 	margin: 0;
 	padding: 8px var(--content-gap);
+}
+
+.first-entry {
+	align-items: center;
+}
+
+.first-entry > * {
+	max-width: 1024px;
+	text-align: center;
+}
+
+.first-entry .entry-header h1,
+.first-entry .entry-content {
+	font-size: 19px;
+	line-height: 28px;
+	max-width: 42em;
 }

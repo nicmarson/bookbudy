@@ -7,13 +7,16 @@
 }
 
 .card-list-item {
+	align-items: center;
 	display: flex;
 	gap: 12px;
+	justify-content: center;
 	padding: 12px;
 }
 
 .card-list-item .media {
-    flex: 1 1 auto;
+	align-items: center;
+  flex: 1 1 auto;
 }
 
 .card-book-horizontal {
